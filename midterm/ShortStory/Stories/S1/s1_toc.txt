@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlotte's Web – Table of Contents</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      background: url('../../homepage/topbg.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      min-height: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+      width: 160px;
+      height: auto;
+    }
+
+    .hamburger-menu {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .hamburger-menu div {
+      height: 3.5px;
+      background-color: #fff;
+      border-radius: 3px;
+      transition: background 0.3s ease;
+    }
+
+    .hamburger-menu:hover div {
+      background-color: beige;
+    }
+
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      overflow: hidden;
+      max-height: 0;
+      width: 200px;
+      transition: max-height 0.5s ease;
+    }
+
+    .hamburger-menu:hover .menu {
+      max-height: 300px;
+    }
+
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+    }
+
+    .menu ul li {
+      margin: 12px 0;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      display: block;
+      padding: 8px;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+      background: #6B8E23;
+      color: white;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 30px;
+      color: #222;
+      margin: 25px 0;
+    }
+	.book-info {
+	  display: flex;
+	  align-items: flex-start;
+	  gap: 30px;
+	  margin: 40px auto;
+	  margin-top: 60px;
+	  max-width: 900px;
+	  background: rgba(255, 255, 255, 0.85);
+	  padding: 20px;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+	}
+
+	.book-cover {
+	  width: 200px;
+	  height: auto;
+	  border-radius: 8px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+	}
+
+	.book-details h2 {
+	  margin-top: 0;
+	  font-size: 28px;
+	  color: #228B22; 
+	}
+
+	.book-details p {
+	  margin: 15px 0;
+	  font-size: 20px;
+	  color: #333;
+	}
+
+   main {
+	  padding: 40px;
+	  background: rgba(255, 255, 255, 0.85);
+	  margin: 20px auto;
+	  max-width: 100%;      
+	  border-radius: 0;     
+	  box-shadow: none;     
+	}
+
+	table {
+	  width: 100vw;         
+	  border-collapse: collapse;
+	  margin-top: 20px;
+	}
+
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 2px solid #ccc;
+    }
+
+    th {
+      background-color: #6B8E23;
+      font-size: 20px;
+      color: white;
+    }
+
+    td {
+      font-size: 18px;
+      color: #444;
+    }
+	
+	.clickable-row {
+	  cursor: pointer;
+	  transition: background 0.3s ease;
+	}
+
+	.clickable-row:hover {
+	  background-color: lightgrey; 
+	}
+
+
+    footer {
+      background: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../../logo.png" alt="TaleTail Logo" class="logo">
+    <div class="hamburger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../../landing.html">Home</a></li>
+          <li><a href="../../homepage/homepage.html">Stories</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="book-info">
+	  <img src="../../homepage/S1.png" alt="Charlotte's Web Book Cover" class="book-cover">
+
+	  <div class="book-details">
+		<h2>Charlotte's Web</h2>
+		<p><strong>Author:</strong> E. B. White</p>
+		<p><strong>Illustrator:</strong> Garth Williams</p>
+		<p><strong>Genre:</strong> Children's Literature, Animal Fantasy</p>
+		<p><strong>Category:</strong> Classic Novel</p>
+		<p><strong>Published:</strong> 1952</p>
+		<p><strong>Summary:</strong> A timeless story of friendship, love, and the power of words.</p>
+	  </div>
+	</section>
+
+
+  <main> 
+  <p class="tagline">Table of Content</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Chapter</th>
+          <th>Title</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+	  <tr class="clickable-row" onclick="window.location.href='chapter/ch1/	ch1.html'">
+		<td>1</td>
+		<td>Wilbur the Piglet</td>
+		<td>Fern rescues a tiny piglet and begins a bond that changes both their lives.</td>
+	  </tr>
+	  <tr class="clickable-row" onclick="window.location.href='chapter/ch2/	ch2.html'">
+		<td>2</td>
+		<td>Charlotte the Spider</td>
+		<td>In the barn, Wilbur meets Charlotte, a wise spider who offers friendship and comfort.</td>
+	  </tr>
+	  <tr class="clickable-row" onclick="window.location.href='chapter/ch3/	ch3.html'">
+		<td>3</td>
+		<td>Words in the Web</td>
+		<td>Charlotte weaves extraordinary words into her web, making Wilbur seem truly special.</td>
+	  </tr>
+	  <tr class="clickable-row" onclick="window.location.href='chapter/ch4/	ch4.html'">
+		<td>4</td>
+		<td>The Fair</td>
+		<td>Wilbur is taken to the county fair, where Charlotte’s work reaches its most important moment.</td>
+	  </tr>
+	  <tr class="clickable-row" onclick="window.location.href='chapter/ch5/	ch5.html'">
+		<td>5</td>
+		<td>Charlotte’s Legacy</td>
+		<td>Wilbur learns the lasting power of friendship and carries Charlotte’s gift into the future.</td>
+	  </tr>
+	</tbody>
+
+    </table>
+  </main>
+  <footer>
+    © 2026 TaleTail Stories — All Rights Reserved
+  </footer>
+</body>
+</html>

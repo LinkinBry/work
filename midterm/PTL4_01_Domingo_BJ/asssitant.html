@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLSHCO Info Assistant</title>
+  <style>
+    body { 
+      margin: 0; 
+    }
+    .header {
+      display: flex; 
+      align-items: center; 
+      justify-content: flex-start; 
+      background-color: maroon; 
+      padding: 10px 20px; 
+      width: 100%; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+    }
+    .header img {
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+    }
+    .app-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+    .content {
+      padding: 20px;
+    }
+
+    .header-text{
+      margin-top: 100px;
+      text-align: center;
+      color: maroon;
+    }
+    .question { 
+      margin: 15px 0; 
+    }
+    
+    button { 
+      background-color: maroon;
+      color: white;
+      margin-top: 5px; 
+    }
+
+    .answer { 
+      margin-top: 5px; 
+      color: maroon  ; 
+      font-weight: bold; 
+    }
+
+    #progress { 
+      font-weight: bold; 
+      margin: 20px 0; 
+      text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="School Logo">
+    <div class="app-name">OLSHCO Information Assistant</div>
+  </div>
+  <div class="header-text">
+    <h2>FAQ</h2></div>
+  <div class="content">
+    <p>Click the buttons below to show the answers.</p>
+
+ 
+    <div class="question">
+      <p>Query 1: What are the offered courses?</p>
+      <button onclick="showAnswer('ans1')">Answer</button>
+      <div id="ans1" class="answer"></div>
+    </div>
+
+    <div class="question">
+      <p>Query 2: What are the available scholarship programs?</p>
+      <button onclick="showAnswer('ans2')">Answer</button>
+      <div id="ans2" class="answer"></div>
+    </div>
+
+    <div class="question">
+      <p>Query 3: Is the school exclusive to Catholic students?</p>
+      <button onclick="showAnswer('ans3')">Answer</button>
+      <div id="ans3" class="answer"></div>
+    </div>
+
+    <div id="progress">0 / 3</div>
+  </div>
+
+  <script>
+    let answeredCount = 0;
+    const totalQuestions = 3;
+
+    function showAnswer(id) {
+      const ansDiv = document.getElementById(id);
+      if (ansDiv.innerText === "") { 
+        answeredCount++;
+        updateProgress();
+      }
+
+      if (id === 'ans1') {
+        ansDiv.innerText = "Right now the offered courses are BSIT, BSED, BSCRIM, BSHM, and BSOAD.";
+      }
+      if (id === 'ans2') {
+        ansDiv.innerText = "Tertiary Education Subsidy (TES)";
+      }
+      if (id === 'ans3') {
+        ansDiv.innerText = "No. Any religion is welcome to enroll.";
+      }
+    }
+
+    function updateProgress() {
+      document.getElementById("progress").innerText =
+        "Progress: " + answeredCount + " / " + totalQuestions;
+    }
+  </script>
+</body>
+</html>

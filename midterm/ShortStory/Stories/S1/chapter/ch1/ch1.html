@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlotte's Web – Chapter 1</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: beige;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+	  display: flex;
+	  align-items: center;  
+	  justify-content: space-between; 
+	  padding: 20px;
+	  background: transparent;
+	  box-shadow: none;
+	}
+
+
+	.hamburger-menu {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  width: 40px;
+	  height: 30px;
+	  cursor: pointer;
+	  z-index: 1000;
+	}
+
+
+	.hamburger-menu div {
+	  height: 3.5px;
+	  background-color: #6B8E23;
+	  border-radius: 3px;
+	  transition: background 0.3s ease;
+	}
+
+	.hamburger-menu:hover div {
+	  background-color: black;
+	}
+
+	.menu {
+	  position: absolute;
+	  top: 50px; 
+	  left: 0;
+	  background: rgba(255, 255, 255, 0.95);
+	  border-radius: 10px;
+	  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+	  overflow: hidden;
+	  max-height: 0;
+	  width: 200px;
+	  transition: max-height 0.5s ease;
+	}
+
+
+	.hamburger-menu:hover .menu {
+	  max-height: 300px;
+	}
+
+
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+    }
+
+    .menu ul li {
+      margin: 12px 0;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      display: block;
+      padding: 8px;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+      background: #6B8E23;
+      color: white;
+    }
+
+    .chapter-illustration {
+      display: block;
+      margin: 40px auto 20px auto;
+      max-width: 550px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .chapter-content {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .chapter-content h2 {
+      font-size: 32px;
+      color: #228B22;
+      margin-top: 0;
+    }
+
+    .chapter-content p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #444;
+    }
+	
+	.chapter-navigation {
+	  display: flex;
+	  justify-content: flex-end;
+	  margin: 30px auto;
+	  max-width: 900px;
+	}
+
+	.nav-button {
+	  background-color: #6B8E23;
+	  color: white;
+	  text-decoration: none;
+	  padding: 12px 24px;
+	  border-radius: 8px;
+	  font-size: 18px;
+	  transition: background 0.3s ease;
+	}
+
+.nav-button:hover {
+  background-color: #228B22;
+}
+
+
+    footer {
+      background: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #444;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hamburger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../../../../landing.html">Home</a></li>
+          <li><a href="../../../../homepage/homepage.html">Stories</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <img src="../../../illustration/i1.png" alt="Chapter 1 Illustration" class="chapter-illustration">
+
+
+  <div class="chapter-content">
+    <h2>Chapter 1: Wilbur the Piglet</h2>
+    <p>
+      One bright morning, a little girl named Fern noticed her father walking toward the barn. He was carrying an axe, and Fern quickly asked what he was doing. Her father explained that one of the piglets was very small and weak. But Fern’s heart was full of love. She hugged her father’s arm and said, “Please don’t hurt him. I’ll take care of the little pig myself.”
+	  <br><br>
+	  Her father looked at Fern’s determined face and smiled. “All right,” he said. “If you promise to look after him, he can be yours.” Fern was overjoyed. She gently picked up the tiny piglet and whispered, “I’ll call you Wilbur.”
+	  <br><br>
+	  From that day on, Fern cared for Wilbur like he was her own baby. She fed him warm milk from a bottle, tucked him into a blanket, and even carried him around in her arms. Wilbur followed Fern everywhere, his little tail wagging happily. He loved the sound of her voice and the way she made him feel safe.
+      <br><br>
+	  As Wilbur grew bigger and stronger, Fern’s family decided he needed more space. So Wilbur moved to her Uncle Homer Zuckerman’s barn, where there were geese, sheep, and other animals. Fern still visited him every day, but when she wasn’t there, Wilbur sometimes felt lonely. He looked around the barn and sighed, “I wish I had a friend to talk to.”
+    </p>
+  </div>
+  
+  <div class="chapter-navigation">
+	  <a href="../ch2/ch2.html" class="nav-button">Next Chapter →</a>
+	</div>
+
+
+  <footer>
+    © 2026 TaleTail Stories — All Rights Reserved
+  </footer>
+</body>
+</html>

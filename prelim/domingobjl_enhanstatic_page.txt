@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <title>Enhanced Static Page</title>
+</head>
+<body background="bg.jpg">
+  
+    <header>
+        <h1>About: <u><font color="blue">Bryan Jay L. Domingo</font></u></h1>
+        <hr>
+    </header>
+
+    <div>
+        <img src="profile.jpg" alt="Photo of Bryan Jay L. Domingo" width="200" height="200">
+    </div>
+
+    <div>
+        <h2><u><font color="blue">Short Bio</font></u></h2>
+        <p>Hello! My name is <font color="blue">Bryan</font>. I love listening to <font color="blue">music</font> and playing <font color="blue">games</font>. 
+        I'm usually <font color="blue">quiet</font>, but I’m the <font color="blue">loudest</font> one when I’m with my friends.</p>
+    </div>
+
+    <div>
+        <h2><u><font color="blue">My Background</font></u></h2>
+        <p>I grew up in a humble family in Guimba, Nueva Ecija. I’m currently studying and 
+        building my skills in technology and design. I enjoy coding as much as playing games.</p>
+    </div>
+
+    <div>
+        <h2><u><font color="blue">My Hobbies</font></u></h2>
+        <ul>
+            <li>Listening to music</li>
+            <li>Playing video games</li>
+            <li>Exploring new tech tools</li>
+            <li>Watching Documentaries</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2><u><font color="blue">My Favorite Music Genres</font></u></h2>
+        <ol>
+            <li>Rock</li>
+            <li>Metal</li>
+            <li>Rap</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2><u><font color="blue">My Favorite Bands</font></u></h2>
+        <ul>
+            <li>Falling In Reverse</li>
+            <li>Linkin Park</li>
+            <li>Guns N' Roses</li>
+            <li>Bon Jovi</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2><u><font color="blue">My Moods</font></u></h2>
+        <b>Happy</b> <img src="HappyMe.png" alt="Happy Mood" width="200" height="200">
+        <b>Serious</b> <img src="SeriousMe.png" alt="Serious Mood" width="200" height="200">
+    </div>
+
+    <div>
+	<br>
+        <h2><u><font color="blue">Fun Facts About Me</font></u></h2>
+        <ul>
+            <li>
+                <h3>Lone Wolf</h3>
+                <blockquote><p>I prefer doing things alone.</p></blockquote>
+            </li>
+            <li>
+                <h3>Curious Mind</h3>
+                <blockquote>Curious by nature, Always questioning the unknown.</blockquote>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <h2><u><font color="blue">Get to Know Me Better</font></u></h2>
+        <p>Follow me on Facebook: 
+        <a href="https://www.facebook.com/bryan.jay.licuanan.domingo">Bryan Jay Licuanan Domingo</a></p>
+        <p><font color="blue">&copy; 2026 Bryan Jay L. Domingo</font></p>
+    </footer>
+</body>
+</html>

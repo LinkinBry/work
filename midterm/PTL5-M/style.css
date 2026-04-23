@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-container {
+  width: 470px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"], input[type="password"] {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 0;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #33A1FF;
+  transform: translateY(-3px);
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 95%;
+  padding-right: 10px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 32%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+.eye-icon svg {
+  vertical-align: middle;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.options a {
+  color: #33A1FF;
+  text-decoration: none;
+}
+
+.options a:hover {
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background: #33A1FF;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #1F6FB2;
+  box-shadow: 0 0 12px #33A1FF;
+  transform: translateY(-2px);
+}
+
+.btn.google {
+  background: #fff;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.btn.google:hover {
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 0 10px #33A1FF;
+  transform: translateY(-2px);
+}
+
+.google-icon {
+  width: 25px;             
+  height: 25px;             
+  vertical-align: middle;  
+  margin-right: 10px;        
+}
+
+
+
+.signup {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.signup a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #33A1FF;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.signup a:hover {
+  color: #fff;
+}

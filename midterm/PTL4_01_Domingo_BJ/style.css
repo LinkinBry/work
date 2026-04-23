@@ -1,0 +1,115 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: maroon;
+    }
+    .quiz-box {
+      background: white;
+      border: 2px solid maroon;
+      border-radius: 8px;
+      padding: 20px;
+      height: 400px;
+      width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .section {
+      margin: 10px 0;
+      color: maroon;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      background-color: maroon;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+    #result {
+      font-weight: bold;
+      color: maroon;
+      font-size: 26px; 
+      margin-top: 20px;
+    }
+    #watch-container {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    #watch-container img {
+      width: 130px;
+      height: auto;
+      filter: contrast(130%) brightness(110%);
+    }
+    #watch-timer {
+      position: absolute;
+      top: 54%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      color: maroon;
+      font-size: 17px;
+    }
+    #question-container {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+    }
+    .options button {
+      flex: 0 0 40%; 
+    }
+    .options button:hover {
+      color: gold;
+    }
+    #retry button {
+      background-color: maroon;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    #retry button:hover {
+      background-color: maroon;
+      color: gold;
+      transform: scale(1.05);
+      transition: 0.2s ease;
+    }
+    #retry{
+        margin-top: 60px;
+    }
+    #progress {
+      margin-top: 50px;
+      font-weight: bold;
+      color: maroon;
+    }
+   
+    .quiz-box.result-mode {
+      height: 300px;
+      width: 400px;
+      justify-content: center;
+    }
+    #result{
+        padding-top: 35px;
+        color:black;
+    }
